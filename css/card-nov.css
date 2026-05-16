@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cause", sans-serif;
+}
+
+.card-nov {
+  
+  flex: 0 0 350px;
+  width: 350px;
+  height: 330px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  animation: deslocamento 15s ease-out infinite;
+}
+.novidades:hover .card-nov {
+  animation-play-state: paused;
+}
+@keyframes deslocamento {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-360px);
+  }
+  50%,
+  70% {
+    transform: translateX(-720px);
+  }
+  75%,
+  95% {
+    transform: translateX(-1080px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

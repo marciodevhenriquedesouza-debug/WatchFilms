@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cause", sans-serif;
+}
+
+.container {
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  z-index: 5;
+}
+.container header {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+}
+.logado {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+}
+.top10 {
+  overflow-y: hidden;
+  overflow-x: auto;
+  gap: 10px;
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  
+}
+.titulo {
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 20px;
+  position: absolute;
+  color: white;
+}
+.genTopF {
+  margin-top: 470px;
+  z-index: 1;
+}
+.genTopS {
+  margin-top: 760px;
+  z-index: 1;
+}
+.genAcao {
+  margin-top: 1050px;
+  z-index: 1;
+}
+.genComedia {
+  margin-top: 1340px;
+  z-index: 1;
+}
+.genSuspense {
+  margin-top: 1630px;
+  z-index: 1;
+}
+.genTerror {
+  margin-top: 1920px;
+  z-index: 1;
+}
+.genNovidades {
+  box-shadow: 0 0 15px white;
+  padding: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: solid rgb(66, 65, 65);
+  margin-top: 20px;
+  font-size: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 600;
+  position: absolute;
+  color: rgb(72, 138, 214);
+}
+.generos {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-top: 40px;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  
+}
+.filmes {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  font-weight: 550;
+  left: 30%;
+  transform: translateX(-50%);
+}
+.series {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  font-weight: 550;
+  left: 70%;
+  transform: translateX(-50%);
+}
+.novidades {
+  
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  height: 400px;
+}
+.logoW {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.logoF {
+  color: yellow;
+  font-size: 42px;
+  font-weight: 700;
+  font-style: oblique;
+}
