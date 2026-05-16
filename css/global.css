@@ -10,9 +10,10 @@
   position: absolute;
   width: 100%;
   min-height: 100vh;
-  background-color: black;
-  z-index: 5;
+  background: linear-gradient(135deg, #0a0a0a 0%, #0c4b75 100%);
+  
 }
+
 .container header {
   position: absolute;
   height: 70px;
@@ -33,7 +34,7 @@
 .top10 {
   overflow-y: hidden;
   overflow-x: auto;
-  gap: 10px;
+  gap: 15px;
   display: flex;
   margin-top: 40px;
   position: relative;
@@ -90,7 +91,7 @@
 .generos {
   display: flex;
   overflow-x: auto;
-  gap: 10px;
+  gap: 15px;
   margin-top: 40px;
   position: relative;
   height: 250px;
@@ -114,8 +115,8 @@
   transform: translateX(-50%);
 }
 .novidades {
-  
-  gap: 10px;
+  overflow: hidden;
+  gap: 15px;
   display: flex;
   align-items: center;
   position: relative;
