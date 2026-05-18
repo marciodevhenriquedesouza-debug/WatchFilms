@@ -27,22 +27,35 @@
         <div class="face frente">Planos a partir de R$ 9,90 mês</div>
         <div class="face verso">Não perca mais tempo, junte-se a nós</div>
       </div>
+
+
       <div class="login">
-        <span class="active">Crie sua Conta</span>
-        <!-- <span
-          >Pegue sua pipoca e venha se divertir com <br />
-          os melhores filmes e séries.
-        </span> -->
-        <div>
-          <!-- <input class="email senha"  placeholder="Digite seu email" type="email" />
-          <button class="enviaEmail">Vamos lá >></button>
-          <a href="" class="esqueceu-senha">Esqueceu sua senha  , clique aqui</a> -->
-          <input class="name active" placeholder="Digite seu Nome" type="text">
-          <input class="senha active" placeholder="Digite uma Senha" type="password">
-          <input class="confirmaSenha active" placeholder="Confirme a Senha" type="password">
-          <button class="criaConta active">Crie minha conta</button>
+        
+         
+          <div id="tela-email">
+          <span>Pegue sua pipoca e venha se divertir com <br/> os melhores filmes e séries.</span> 
+          <input id="inputEmail" class="senha" placeholder="Digite seu email"type="email"/>
+          <button id="btnVamosLa">Vamos lá >></button>
+          
         </div>
+
+        <div id="tela-login" style="display:none">
+          <span>Pegue sua pipoca e venha se divertir com <br/> os melhores filmes e séries.</span> 
+          <input id="inputSenha"placeholder="Digite sua senha   🔒"type="password"/>
+          <button id="btnEntrar">Entrar</button>
+          <a href="" class="esqueceu-senha" id="linkEsqueceu">Esqueceu sua senha , clique aqui</a>
+        </div>
+
+        <div id="tela-cadastro" style="display:none">
+          <span>Crie sua Conta</span>
+          <input id="inputNome" placeholder="Digite seu Nome     👤"type="text"/>
+          <input id="inputSenhaNova" placeholder="Crie uma Senha      🔒"type="password"/>
+          <input id="inputConfirma" placeholder="Confirme a Senha   🔒"type="password"/>
+          <button id="btnCriaConta">Crie minha conta</button>
+        </div> 
+
       </div>
     </section>
   </body>
+  <script type="module" src="/js/auth.js"></script>
 </html>

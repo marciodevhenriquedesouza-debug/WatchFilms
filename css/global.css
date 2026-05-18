@@ -29,7 +29,20 @@
   color: white;
   position: absolute;
   right: 0;
-  margin-right: 40px;
+  margin-right: 70px;
+}
+#btnSair {
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius:15px ;
+  background-color: red;
+  color: white;
+  border: white 1px;
+  box-shadow: 0 0 10px rgb(241, 238, 238);
+}
+#btnSair:hover {
+  background-color: rgb(204, 27, 27);
 }
 .top10 {
   overflow-y: hidden;

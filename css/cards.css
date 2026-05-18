@@ -15,8 +15,14 @@
   object-fit: fill;
   border-radius: 10px;
   object-position: top;
-  
 }
+
+.card-nov:hover ,
+.cards:hover {
+   opacity: 0.7;
+   box-shadow: 0 0  15px white;
+}
+
 
 .cards {
   flex: 0 0 210px;
@@ -39,10 +45,12 @@
   animation-play-state: paused;
 }
 @keyframes deslocamento {
-  0% , 10%{
+  0%,
+  10% {
     transform: translateX(0);
   }
-  90%, 100% {
+  90%,
+  100% {
     transform: translateX(-2250px);
   }
 }

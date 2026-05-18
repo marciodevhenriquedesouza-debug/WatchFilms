@@ -8,7 +8,6 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  
 }
 .container {
   perspective: 1000px;
@@ -44,10 +43,13 @@
   transform: translateX(-50%);
   top: 80px;
   transform-style: preserve-3d;
-  
+
   animation:
     fase1 4s ease-out 4s backwards,
     gira 1.5s ease-out 8s forwards;
+}
+#inputNome {
+  margin-top: 12px;
 }
 
 .face {
@@ -67,40 +69,53 @@
 }
 
 .frente {
-  background-color: rgba(10, 68, 8, 0.8);
-  border: 2px solid #2fd379;
+  background-color: rgba(12, 12, 36, 0.7);
+  border: 2px solid #77d360;
   box-shadow:
-    0 0 15px #2fd379,
-    inset 0 0 10px #34db5e;
-  transform: rotateX(0deg) translateZ(1px); 
+    0 0 15px #107e19,
+    inset 0 0 10px #0c6919;
+  transform: rotateX(0deg) translateZ(1px);
 }
 
 .verso {
-  background-color: rgba(10, 68, 8, 0.8);
-  border: 2px solid #2fd379;
+  background-color: rgba(12, 12, 36, 0.7);
+  border: 2px solid #77d360;
   box-shadow:
-    0 0 15px #2fd379,
-    inset 0 0 10px #34db5e;
+    0 0 15px #107e19,
+    inset 0 0 10px #0c6919;
 
   transform: rotateX(180deg) translateZ(1px);
   color: white;
 }
 
 @keyframes fase1 {
-  0%   { transform: translateX(-50%) translateY(-180px); }
-  60%  { transform: translateX(-50%) translateY(10px); }
-  80%  { transform: translateX(-50%) translateY(-5px); opacity: 0.8; }
-  100% { transform: translateX(-50%) translateY(0px); opacity: 1; }
+  0% {
+    transform: translateX(-50%) translateY(-180px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(10px);
+  }
+  80% {
+    transform: translateX(-50%) translateY(-5px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes gira {
-  from { transform: translateX(-50%) translateY(0) rotateX(0deg); }
-  to   { transform: translateX(-50%) translateY(0) rotateX(180deg); }
+  from {
+    transform: translateX(-50%) translateY(0) rotateX(0deg);
+  }
+  to {
+    transform: translateX(-50%) translateY(0) rotateX(180deg);
+  }
 }
 
-/* .login {
+.login #tela-email {
   border-radius: 15px;
-  justify-items: center;
   text-align: center;
   display: grid;
   position: absolute;
@@ -111,8 +126,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
-.login {
+}
+.login #tela-login {
+  border-radius: 15px;
+  text-align: center;
+  display: grid;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.55);
+  height: 230px;
+  width: 750px;
+  padding-top: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login #tela-cadastro {
   box-shadow: 0 0 15px white;
   border-radius: 25px;
   justify-items: center;
@@ -127,7 +156,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.criaConta {
+#btnCriaConta {
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -136,35 +165,54 @@
   padding: 3px;
   background-color: rgb(30, 90, 35);
   height: 38px;
- }
- .criaConta:hover {
-    box-shadow:
+}
+#btnCriaConta:hover {
+  box-shadow:
     0 0 15px #69df7d,
     inset 0 0 10px #37bb5e;
-    background-color: rgb(36, 233, 36);
-    border: white;
+  background-color: rgb(36, 233, 36);
+  border: white;
 }
-/* .login input {
+#inputEmail {
+  margin-left: 20px;
   color: white;
   border: solid white 1px;
   background-color: rgb(0, 0, 0, 0.2);
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 8px;
-  width: 400px;
+  width: 500px;
   height: 50px;
-} */
-input.active {
+}
+#inputSenha {
   color: white;
   border: solid white 1px;
   background-color: rgb(0, 0, 0, 0.2);
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
   border-radius: 8px;
-  width: 250px;
+  width: 350px;
+  height: 50px;
+  margin-right: 140px;
+  margin-top: 40px;
+}
+#inputSenhaNova,
+#inputNome,
+#inputConfirma {
+  color: white;
+  border: solid white 1px;
+  background-color: rgb(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px;
+  width: 200px;
   height: 40px;
   margin-bottom: 15px;
 }
+#emailCadastro {
+  color: white;
+}
+
 ::placeholder {
   font-style: italic;
   color: rgb(255, 255, 255, 0.7);
@@ -176,7 +224,12 @@ input.active {
   font-weight: 800;
   font-size: 35px;
 }
-.enviaEmail {
+#btnVamosLa {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 45px;
+  margin-right: 60px;
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -184,17 +237,40 @@ input.active {
   font-weight: 700;
   padding: 3px;
   background-color: rgb(100, 100, 19);
+  width: 120px;
   height: 38px;
-  margin-left: 20px;
 }
-.enviaEmail:hover {
-    box-shadow:
-    0 0 15px #f1ef54,
-    inset 0 0 10px #cdeb61;
-    background-color: yellow;
-    border: white;
+#btnEntrar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 45px;
+  margin-right: 60px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(10, 10, 10);
+  font-weight: 700;
+  padding: 3px;
+  background-color: rgb(30, 90, 35);
+  width: 120px;
+  height: 38px;
 }
 
+#btnVamosLa:hover {
+  box-shadow:
+    0 0 15px #f1ef54,
+    inset 0 0 10px #cdeb61;
+  background-color: yellow;
+  border: white;
+}
+#btnEntrar:hover {
+  box-shadow:
+    0 0 15px #69df7d,
+    inset 0 0 10px #37bb5e;
+  background-color: rgb(36, 233, 36);
+  border: white;
+}
 
 .esqueceu-senha {
   color: white;
@@ -203,7 +279,6 @@ input.active {
   transform: translateX(-50%);
   left: 41%;
   margin-bottom: 10px;
-
 }
 header {
   align-items: center;
