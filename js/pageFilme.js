@@ -1,5 +1,5 @@
       import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-      import { supabase } from "/js/supabase.js";
+      import { supabase } from "./supabase.js";
 
       // ── PEGA O ID DA URL ────────────────────────────────────────
       // quando vier de um card: filme.html?id=3
