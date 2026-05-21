@@ -78,7 +78,7 @@ btnEntrar.addEventListener("click", async () => {
     return;
   }
 
-  window.location.href = "/pages/home.html";
+  window.location.href = "home.html";
 });
 
 // ── ESTADO 3: criar conta ──────────────────────────────────
@@ -122,7 +122,7 @@ btnCriaConta.addEventListener("click", async () => {
   }
 
   alert("Conta criada com sucesso!");
-  window.location.href = "/pages/home.html";
+  window.location.href = "home.html";
   nomeLogado.textContent = `${nome}`;
 });
 
