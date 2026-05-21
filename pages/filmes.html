@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchFilms — Detalhes</title>
+  <link rel="stylesheet" href="/css/pageFilmes.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="/pages/home.html" class="logo">Watch<span>Films</span></a>
+    <a href="/pages/home.html" class="nav-back">
+      <svg viewBox="0 0 24 24">
+        <path d="M19 12H5M12 5l-7 7 7 7" />
+      </svg>
+      Voltar ao catálogo
+    </a>
+  </nav>
+
+  <!-- TRAILER -->
+  <div class="hero">
+    <div class="trailer-wrap">
+      <iframe id="trailerFrame"
+        src=""
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+      <!-- FICHA TÉCNICA -->
+      <div class="ficha">
+        <div class="desc-label">Ficha técnica</div>
+        <div class="ficha-row">
+          <span class="label">Diretor</span>
+          <span class="value">Nome Diretor</span>
+        </div>
+        <div class="ficha-row">
+          <span class="label">Roteiro</span>
+          <span class="value">Nome Roteirista</span>
+        </div>
+        <div class="ficha-row">
+          <span class="label">Gênero</span>
+          <span class="value">Ação, Ficção</span>
+        </div>
+        <div class="ficha-row">
+          <span class="label">Lançamento</span>
+          <span class="value">2024</span>
+        </div>
+        <div class="ficha-row">
+          <span class="label">Duração</span>
+          <span class="value">2h 28min</span>
+        </div>
+        <div class="ficha-row">
+          <span class="label">Classificação</span>
+          <span class="value">14 anos</span>
+        </div>
+        <div class="ficha-row">
+          <span class="label">Idioma</span>
+          <span class="value">Inglês / Leg. PT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trailer-fade-left"></div>
+    <div class="trailer-fade"></div>
+  </div>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="content">
+    <!-- INFO PRINCIPAL -->
+    <div class="filme-info">
+
+      <div class="poster"></div>
+
+      <div class="filme-meta">
+
+        <h1 class="filme-titulo" id="filmeTitulo">Nome do Filme</h1>
+
+        <div class="filme-stats">
+          <div class="nota">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            8.7
+          </div>
+          <div class="sep"></div>
+          <span>2024</span>
+          <div class="sep"></div>
+          <span>2h 28min</span>
+          <div class="sep"></div>
+          <span>14 anos</span>
+        </div>
+        <div class="btns">
+          <button class="btn-assistir">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 3l14 9-14 9V3z" />
+            </svg>
+            Assistir agora
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- DESCRIÇÃO + FICHA -->
+    <div class="section-desc">
+      <div class="desc-label">Sinopse</div>
+      <p class="desc-texto">
+        Em um futuro não muito distante, um grupo de cientistas descobre uma
+        forma de dobrar o espaço-tempo, abrindo portais para dimensões
+        paralelas. Quando um experimento dá errado, o protagonista se vê
+        preso entre mundos, precisando encontrar o caminho de volta antes
+        que as duas realidades colidam e destruam tudo que conhece. Uma
+        jornada épica sobre sacrifício, amor e os limites da ciência. <br>
+        <br>
+      </p>
+    </div>
+  </div>
+  <script type="module" src="/js/pageFilme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+#novidades {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  width: 100%;
+  height: 600px; /* ajuste conforme a altura da sua section */
+  overflow: hidden;
+}
+
+.trailer-container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  overflow: hidden;
+  box-shadow: 0 40px 60px rgb(255, 255, 255, 0.5);
+}
+#assistir-btn {
+  position: relative;
+  margin-left: 40px;
+  bottom: 55px;
+  font-size: 17px;
+  font-weight: 600;
+  width: 100px;
+  height: 40px;
+  color: white;
+  box-shadow: 2px 2px 15px black inset;
+  cursor: pointer;
+  background-color: red;
+}
+#btnSom {
+  position: relative;
+  margin-left: 50px;
+  bottom: 55px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: white;
+  background-color: rgb(19, 19, 20);
+  box-shadow: 0 0 15px white;
+}
+.trailer-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* nome do filme sobre o trailer */
+.trailer-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#trailerFrame {
+  transition: opacity 0.6s ease;
+}
+.trailer-info {
+  transition: opacity 0.4s ease;
+}
+.trailer-titulo {
+  position: absolute;
+  margin-left: 250px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-weight: 600;
+  color: #f0eeea;
+  bottom: 0;
+}
+
+.trailer-genero {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* setas */
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  font-size: 18px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seta:hover {
+  background: rgba(17, 156, 36, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.seta-esq {
+  left: 50px;
+}
+.seta-dir {
+  right: 50px;
+}

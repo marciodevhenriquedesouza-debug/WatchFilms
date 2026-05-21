@@ -293,8 +293,11 @@
   font-weight: 700;
   padding: 3px;
   background-color: rgb(30, 90, 35);
+  opacity: 0;
   width: 120px;
   height: 38px;
+  animation: revela-btn 0.8s ease-in  forwards;
+
 }
 
 #btnVamosLa:hover {
