@@ -15,13 +15,13 @@ if (data.session) {
   const nome = data.session.user.user_metadata?.nome_completo || data.session.user.email
   nomeLogado.textContent = nome
 } else {
-  window.location.href = '/pages/login.html'
+  window.location.href = '../pages/login.html'
 }
 
 // botão sair
 document.getElementById('btnSair').addEventListener('click', async () => {
   await supabase.auth.signOut()
-  window.location.href = '/pages/login.html'
+  window.location.href = '../pages/login.html'
 })
 
 // navegação para página do filme
